@@ -6,6 +6,7 @@
 - [x] Posts monitor lag to cachet graphs
 - [x] HTTP Checks (body/status code)
 - [x] DNS Checks
+- [x] SSH Checks
 - [x] Updates Component to Partial Outage
 - [x] Updates Component to Major Outage if already in Partial Outage (works with distributed monitors)
 - [x] Can be run on multiple servers and geo regions
@@ -81,6 +82,12 @@ monitors:
       - exact: 10 aspmx2.googlemail.com.
       - exact: 1 aspmx.l.google.com.
       - exact: 10 aspmx3.googlemail.com.
+  # ssh monitor example
+  - name: ssh
+    server: host:22
+    username: foo
+    password: bar
+    command: foobar
 ```
 
 ## Installation

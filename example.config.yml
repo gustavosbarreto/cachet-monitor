@@ -63,3 +63,9 @@ monitors:
       - exact: 10 aspmx2.googlemail.com.
       - exact: 1 aspmx.l.google.com.
       - exact: 10 aspmx3.googlemail.com.
+  # ssh monitor example
+  - name: ssh
+    server: host:22
+    username: foo
+    password: bar
+    command: foobar
